@@ -1,6 +1,6 @@
 import sys
 input = sys.stdin.readline
 
-a, b = map(int, input().split())
-
+a = int(input())
+b = int(input())
 print(a*b)
