@@ -7,6 +7,7 @@ def discriminant_pos(x):
 array = list(map(int, input().split()))
 
 array = [e-500 for e in array]
+array.sort()
 
 neg_array = list(filter(discriminant_neg, array))
 pos_array = list(filter(discriminant_pos, array))
