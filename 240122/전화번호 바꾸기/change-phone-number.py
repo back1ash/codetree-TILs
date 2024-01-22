@@ -1,3 +1,3 @@
 f,m,l = input().split()
 
-print(f"{f}-{l}-{d}")
+print(f"{f}-{l}-{m}")
