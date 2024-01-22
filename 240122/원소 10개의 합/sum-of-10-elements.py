@@ -1,6 +1,6 @@
 import sys
 input = sys.stdin.readline
 
-line = input().split()
+line = list(map(int, input().split()))
 
 print(sum(line))
