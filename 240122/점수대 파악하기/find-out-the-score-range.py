@@ -10,7 +10,7 @@ idx_0 = grades.index("0")
 a = list(filter(under_10, grades[0:idx_0]))
 count = [0 for _ in range(11)]
 
-for grade in grades:
+for grade in a:
     if grade == "100":
         count[10] += 1
         continue
