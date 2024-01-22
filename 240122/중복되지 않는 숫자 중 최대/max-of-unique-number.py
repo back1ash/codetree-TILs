@@ -12,6 +12,6 @@ for cur in array:
                 count += 1
         
         if count == 1:
-            max_num = cur
+            biggest = cur
 
-print(max_num)
+print(biggest)
