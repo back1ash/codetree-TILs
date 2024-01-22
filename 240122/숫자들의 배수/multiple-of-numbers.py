@@ -1,6 +1,6 @@
 n = int(input())
 
-count_5 = 0
+count_5 = 0 if n%5 !=0 else 1
 array = [n]
 
 i = 2
