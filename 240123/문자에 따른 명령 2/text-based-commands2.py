@@ -7,9 +7,9 @@ x,y = (0,0)
 
 for command in commands:
     if command == "L":
-        direction -= 1
+        direction = (direction+3) % 4
     elif command == "R":
-        direction += 1
+        direction = (direction+1) % 4
     elif command == "F":
         x += dx[direction]
         y += dy[direction]
