@@ -9,7 +9,7 @@ def in_range(x, y):
 
 
 dx = [1, 0, 0 ,-1]
-dy = [0, 1, -1 ,0]
+dy = [0, -1, 1 ,0]
 
 now = 0
 while now < t:
