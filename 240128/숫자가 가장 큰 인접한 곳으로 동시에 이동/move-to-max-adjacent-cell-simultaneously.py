@@ -11,7 +11,7 @@ def in_range(x, y):
 
 for time in range(t):
     count = [[0 for _ in range(n)] for _ in range(n)]
-    for y,x in marbles:
+    for y, x in marbles:
         x, y = (x-1, y-1)
         biggest = 0
         direction = 0
@@ -27,7 +27,7 @@ for time in range(t):
             if count[i][j] >= 2:
                 count [i][j] = 0
             elif count[i][j] == 1:
-                new_marble.append([j+1, i+1])
+                new_marble.append([i+1, j+1])
     marbles = new_marble
 
 print(len(marbles))
