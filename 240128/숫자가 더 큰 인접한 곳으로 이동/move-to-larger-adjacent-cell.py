@@ -8,14 +8,14 @@ def in_range(x, y):
 
 square = [list(map(int, input().split())) for _ in range(n)]
 dx = [0, 0, -1, 1]
-dy = [1, -1, 0, 0]
+dy = [-1, 1, 0, 0]
 visit_list = []
 while True:
     direction = 4
     now = square[r][c]
     visit_list.append(now)
     for i in range(4):
-        if in_range(r+dx[i], c+dy[i]) and now < square[r+dy[i]][c+dx[i]]:
+        if in_range(c+dx[i], r+dy[i]) and now < square[r+dy[i]][c+dx[i]]:
             now = square[r+dy[i]][c+dx[i]]
             direction = i
             break
