@@ -23,7 +23,7 @@ for a in range(scope):
 tmp = [[0 for _ in range(n)]for _ in range(n)]
 #gravity
 for x in range(n):
-    cur = 3
+    cur = n-1
     for y in range(n-1, -1, -1):
         if square[y][x] != 0:
             tmp[cur][x] = square[y][x]
