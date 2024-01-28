@@ -11,13 +11,14 @@ def in_range(x, y):
 
 for time in range(t):
     count = [[0 for _ in range(n)] for _ in range(n)]
-    for x,y in marbles:
+    for y,x in marbles:
         x, y = (x-1, y-1)
         biggest = 0
         direction = 0
         for i in range(4):
-            if in_range(x+dx[i], y+dy[i]) and square[y+dy[i]][x+dx[i]] < biggest:
+            if in_range(x+dx[i], y+dy[i]) and square[y+dy[i]][x+dx[i]] > biggest:
                 direction = i
+                biggest = square[y+dy[i]][x+dx[i]]
         count[y+dy[direction]][x+dx[direction]] += 1
 
     new_marble = []
