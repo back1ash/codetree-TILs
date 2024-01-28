@@ -9,8 +9,9 @@ def in_range(x, y):
 square = [list(map(int, input().split())) for _ in range(n)]
 dx = [0, 1, 1, 1, 0, -1, -1, -1]
 dy = [-1, -1, 0, 1, 1, 1, 0, -1]
-crnt = 1
+
 for _ in range(m):
+    crnt = 1
     while crnt <= n**2:
         flag = 0
         for i in range(n):
