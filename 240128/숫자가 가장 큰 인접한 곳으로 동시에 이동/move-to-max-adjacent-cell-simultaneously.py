@@ -27,7 +27,7 @@ for time in range(t):
             if count[i][j] >= 2:
                 count [i][j] = 0
             elif count[i][j] == 1:
-                new_marble.append([j, i])
+                new_marble.append([j+1, i+1])
     marbles = new_marble
 
 print(len(marbles))
