@@ -1,3 +1,5 @@
+import copy
+
 n, m, k = map(int, input().split())
 distance = list(map(int, input().split()))
 
@@ -6,7 +8,7 @@ orders = []
 
 def set_order(order):
     if len(order) == n:
-        orders.append(order.copy())
+        orders.append(copy.deepcopy(order))
         return
     for i in range(k):
         order.append(i)
@@ -22,7 +24,8 @@ def score(order):
     for x in order:
         tokens[x] += distance[idx]
         idx += 1
-    return len(list(filter(above_m, tokens)))
+    array = list(filter(above_m, tokens))
+    return len(array)
 
 def max_score():
     result = 0
