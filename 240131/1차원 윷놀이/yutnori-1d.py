@@ -19,6 +19,8 @@ def score(order):
     idx = 0
     tokens = [1 for _ in range(k)]
     for x in order:
+        if tokens[x] > m:
+            return 0
         tokens[x] += distance[idx]
         idx += 1
     count = 0
