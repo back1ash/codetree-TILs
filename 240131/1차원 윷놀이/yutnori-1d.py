@@ -15,17 +15,17 @@ def set_order(order):
         set_order(order)
         order.pop()
 
-def above_m(x):
-    return x>=m
-
 def score(order):
     idx = 0
     tokens = [1 for _ in range(k)]
     for x in order:
         tokens[x] += distance[idx]
         idx += 1
-    array = list(filter(above_m, tokens))
-    return len(array)
+    count = 0
+    for token in tokens:
+        if token >= m:
+            count += 1
+    return count
 
 def max_score():
     result = 0
