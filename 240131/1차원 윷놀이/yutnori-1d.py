@@ -20,7 +20,7 @@ def above_m(x):
 
 def score(order):
     idx = 0
-    tokens = [0 for _ in range(k)]
+    tokens = [1 for _ in range(k)]
     for x in order:
         tokens[x] += distance[idx]
         idx += 1
