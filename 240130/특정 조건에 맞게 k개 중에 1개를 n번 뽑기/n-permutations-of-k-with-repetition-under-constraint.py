@@ -6,7 +6,8 @@ def print_answer(a):
      return
 
 def same_check(array):
-    return len(set(array)) == 1
+    if len(array) >= 3:
+        return array[-1] == array[-2] == array[-3]
 
 curr_num = 1
 def choose(curr_num):
