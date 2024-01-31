@@ -23,4 +23,4 @@ def bfs():
                 maze[cx][cy] = 0
 q.append([0,0])
 bfs()
-print(1 if maze[m-1][n-1] == 0 else 0)
+print(1 if maze[-1][-1] == 0 else 0)
