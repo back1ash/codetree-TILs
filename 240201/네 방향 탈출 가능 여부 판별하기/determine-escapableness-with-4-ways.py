@@ -7,7 +7,7 @@ dxs = [-1, 1, 0, 0]
 dys = [0, 0, -1 ,1]
 
 n,m = map(int, input().split())
-maze = [list(map(int, input().split())) for _ in range(m)]
+maze = [list(map(int, input().split())) for _ in range(n)]
 maze[0][0] = 0
 
 def in_range(x, y):
