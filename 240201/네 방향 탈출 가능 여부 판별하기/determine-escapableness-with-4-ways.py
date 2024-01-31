@@ -11,7 +11,7 @@ maze = [list(map(int, input().split())) for _ in range(n)]
 maze[0][0] = 0
 
 def in_range(x, y):
-    return 0<=x<m and 0<=y<n
+    return 0<=x<n and 0<=y<m
 
 def bfs():
     while q:
